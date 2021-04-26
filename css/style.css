@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+html {
+    background-color: white;
+}
+body {
+    width: 375px;
+    margin: 0 auto;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: hsl(244, 38%, 16%);
+    padding-bottom: 30px;
+}
+.image-area {
+    width: 100%;
+    margin-bottom: 40px;
+    height: 200px;
+    background-image: url('../images/image-header-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-area .background {
+    width: 100%;
+    height: 200px;
+    background-color: hsla(277, 64%, 31%, 0.5);
+}
+.text-area {
+    text-align: center;
+    padding: 0 30px;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+h2 span {
+    font-size: 2rem;
+    color: hsl(277, 64%, 61%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+}
+.stats {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.number {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.label {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.companies {
+    margin-bottom: 35px;
+}
+.templates {
+    margin-bottom: 35px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        width: 1440px;
+        align-items: center;
+    }
+    section {
+        flex-direction: row-reverse;
+        width: 1000px;
+        padding: 0;
+    }
+    .text-area {
+        width: 55%;
+        margin: 0;
+        padding: 60px 100px 60px 60px;
+        text-align: left;
+        height: 400px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.0rem;
+        margin-bottom: 80px;
+    }
+    .stats {
+        margin: 0;
+        padding: 0;
+    }
+    .templates {
+        margin: 0;
+    }
+    .companies {
+        margin: 0;
+    }
+    .image-area {
+        width: 45%;
+        margin: 0;
+        height: 400px;
+        background-image: url('../images/image-header-desktop.jpg');
+    }
+    .image-area .background {
+        width: 100%;
+        height: 400px;
+        background-color:hsla(277, 64%, 31%, 0.5);
+    }
+
+}
